@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>ToDo List</title>
+</head>
+<body style="color :white; background-color:black" >
+  <div class="container mt-5">
+     <div class="text-center">
+       <h1 class="display-5 mb-5"><strong>TODO list</strong></h1>
+     </div>
+      <div >
+      <form action="" id="ToDo-Form" class="row justify-content-center mb-4" autocomplete="off" > 
+       <div class="col-8 mb-3"> 
+          <label for="Name">  Name :</label>
+          <input class="form-control" id="Name" type="text" placeholder="Enter the name">
+       </div>
+       <div class="col-8 mb-3"> 
+         <label for="OfficeTime"> Office Time:</label>
+         <input class="form-control" id="OfficeTime" type="text" placeholder="Enter the office timing">
+       </div>
+       <div class="col-8 mb-3"> 
+        <label for="GymTime"> Gym Time:</label>
+        <input class="form-control" id="GymTime" type="text" placeholder="Enter the Gym timing">
+      </div>
+      <div class="col-5 mt-2">
+       <input class="btn btn-success add-btn" type="Add" value="Add">
+      </div>
+   </form>
+   <div class="col-13 mt-10">
+     <table class="table table-striped table-dark">
+      <thead>
+        <tr>
+          <th> Name </th>
+          <th> Office Timing </th>
+          <th> Gym Timing </th>
+          <th> Actions </th>
+        </tr>
+      </thead>
+      <tbody id="ToDo-List">
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>
+            <a href="#" class="btn btn-warning btn-sm Update">Update</a>
+            <a href="" class="btn  btn-danger btn-sm Delete">Delete</a>
+          </td>
+        </tr>
+        </tbody>
+     </table>
+   </div>
+   </div>
+  </div>
+    <script src="ToDolist.js"></script>
+</body>
+</html>
